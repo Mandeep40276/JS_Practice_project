@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+html{
+    color: #24305f;
+}
+body{
+    background: #fffdfb;
+}
+.according{
+    width: 50%;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.item{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr auto ;
+    gap: 30px;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.number{
+    font-size: 28px;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    color:#186;
+}
+.hiddenbox{
+    grid-column: 2/3;
+    display: none;   /*box hide krne k  liye */
+}
+.hiddenbox p{
+    line-height: 1.6;
+    margin-bottom:24px;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+.hiddenbox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hiddenbox ul li{
+    margin-left: 16px;
+    line-height: 1.5;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+.active .hiddenbox{
+    display: block;
+}
